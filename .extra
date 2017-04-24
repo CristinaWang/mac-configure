@@ -1,0 +1,26 @@
+export GRADLE_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,address=9999,server=y,suspend=n"
+export GRAILS_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9999"
+
+export JAVA_OPTS="-server -Xms1024m -Xmx2048m -XX:PermSize=64M -XX:MaxNewSize=256m -XX:MaxPermSize=128m -Djava.awt.headless=true "
+
+#epic P4 configuration
+export P4PORT=perforce:1666
+export P4USER=Cristina.Wang
+export P4PASSWD=8125dZNAgm
+export P4CLIENT=cristina-wang
+
+
+#DEV Tool home path setting
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+export JAVA_HOME
+M2_HOME=/workspace/opensource/apache-maven-3.5.0
+PG_HOME=/Applications/Postgres.app/Contents/Versions/9.6/
+LIQUIBASE_HOME=/workspace/opensource/liquibase-3.1.1-bin
+GRAILS_HOME=~/.sdkman/candidates/grails/2.4.3
+GRADLE_HOME=~/.sdkman/candidates/gradle/3.4.1
+YARN_HOME=/Users/cristina/.homebrew/Cellar/yarn/0.21.3
+export YARN_HOME
+
+# PATH additions
+PATH="$YARN_HOME/bin:$GRAILS_HOME/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:$M2_HOME/bin:$PG_HOME/bin:$LIQUIBASE_HOME:/Users/cristina/.homebrew/bin:/usr/local/bin:/usr/local/sbin:/Users/cristina/bin:/Users/cristina/.homebrew/opt/findutils/libexec/gnubin:$PATH"
+export PATA
